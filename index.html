@@ -1,45 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meet Singles Near You</title>
-  <style>
-    body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f5f5;color:#222;}
-    .container {max-width:420px;margin:0 auto;background:#fff;padding:20px;min-height:100vh;}
-    h1 {font-size:26px;margin:12px 0;}
-    p {font-size:16px;line-height:1.5;margin-bottom:14px;}
-    ul {padding-left:18px;margin-bottom:20px;}
-    li {margin-bottom:8px;font-size:15px;}
-    .btn {display:block;width:100%;text-align:center;background:#e63946;color:#fff;text-decoration:none;padding:14px 0;font-size:18px;border-radius:6px;}
-    .footer {margin-top:28px;font-size:12px;color:#777;text-align:center;}
-    img {width:100%;border-radius:10px;margin-bottom:14px;}
-    .grid {display:flex;gap:8px;}
-    .grid img {width:100%;}
-  </style>
+<meta charset="UTF-8">
+<title>Meet Real Singles Near You</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f2f5;
+  color: #1c1e21;
+}
+
+.container {
+  max-width: 420px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.hero img,
+.scenes img {
+  width: 100%;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 22px;
+  margin: 16px;
+}
+
+.hero p {
+  font-size: 15px;
+  margin: 0 16px 16px;
+  color: #555;
+}
+
+.form-box {
+  padding: 16px;
+}
+
+.form-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #1877f2;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-box .note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 8px;
+}
+
+.scenes img {
+  margin-top: 6px;
+}
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <img src="images/hero.jpg" alt="Dating">
-    <h1>Meet Singles Near You</h1>
-    <p>Real people nearby are looking to chat, date, and build meaningful connections.</p>
+<div class="container">
 
-    <div class="grid">
-      <img src="images/profile1.jpg" alt="Profile">
-      <img src="images/profile2.jpg" alt="Profile">
-    </div>
+  <!-- HERO -->
+  <section class="hero">
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQyMCAyNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQyMCIgaGVpZ2h0PSIyNTAiIGZpbGw9IiNlNWU3ZWIiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZmlsbD0iIzY2NiIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RGF0aW5nIFNjZW5lIChIZXJvKTwvdGV4dD48L3N2Zz4=" alt="Meet Singles Nearby">
+    <h1>Meet Real Singles Near You</h1>
+    <p>Chat, match and meet people nearby. It only takes a minute.</p>
+  </section>
 
-    <ul>
-      <li>Verified local profiles</li>
-      <li>Private & secure conversations</li>
-      <li>Quick sign-up</li>
-    </ul>
+  <!-- EMAIL -->
+  <section class="form-box">
+    <h2>See Who’s Waiting For You</h2>
+    <form onsubmit="return goOffer();">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <button type="submit">Continue</button>
+    </form>
+    <p class="note">We respect your privacy.</p>
+  </section>
 
-    <a class="btn" href="https://flowbox.hotrk0.com/offer?offer_id=128524&aff_id=295&aff_sub=[click_id]&aff_pub=[source]&advertising_id=[advertising_id]&idfa=[idfa]">View Matches</a>
+  <!-- SCENES -->
+  <section class="scenes">
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQyMCAyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNmMWYzZjQiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZmlsbD0iIzY2NiIgZm9udC1zaXplPSIxNiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q2hhdCBTY2VuZTwvdGV4dD48L3N2Zz4=" alt="Chat with singles">
 
-    <div class="footer">
-      You will be redirected to a third-party dating service.
-    </div>
-  </div>
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQyMCAyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNlZWYyZjciLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZmlsbD0iIzY2NiIgZm9udC1zaXplPSIxNiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWVldCBJbiBQZXJzb248L3RleHQ+PC9zdmc+" alt="Meet in person">
+
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQyMCAyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQyMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNlNmVhZWYiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZmlsbD0iIzY2NiIgZm9udC1zaXplPSIxNiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UmVhbCBDb25uZWN0aW9uczwvdGV4dD48L3N2Zz4=" alt="Real connections">
+  </section>
+
+</div>
+
+<script>
+function goOffer() {
+  var email = document.getElementById('email').value;
+  if (!email) return false;
+
+  // 🔴 替换成你的 Dating offer tracking link
+  window.location.href = "YOUR_OFFER_LINK";
+  return false;
+}
+</script>
+
 </body>
 </html>
